@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Nợ</title>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="tab">
+      <div class="list_title">Danh sách nợ</div>
+    </div>
+
+    <div id="total-debt" class="summary red">
+      [TỔNG TÔI NỢ: 1.5M VND]
+    </div>
+
+    <div id="total-loan" class="summary green">
+      [TỔNG CHO VAY: 2.8M VND]
+    </div>
+
+    <button class="add-btn">+ TẠO NGƯỜI MỚI</button>
+
+    <div id="debt-list" class="list">
+      <div class="card">
+        <img src="../image/images.jpg">
+        <div class="info">
+          <div class="name">Tùng</div>
+          <div class="desc">Ăn trưa</div>
+        </div>
+        <div class="money red">-50k</div>
+      </div>
+
+      <div class="card">
+        <img src="../image/images.jpg">
+        <div class="info">
+          <div class="name">Lan</div>
+          <div class="desc">Mượn tiền</div>
+        </div>
+        <div class="money green">+150k</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NAV ===== -->
+  <div class="bottom-nav">
+    <div class="nav-item">➕<br>Nhập mới</div>
+    <div class="nav-item active">📋<br>Danh sách</div>
+    <div class="nav-item">👤<br>Cá nhân</div>
+  </div>
+
+
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

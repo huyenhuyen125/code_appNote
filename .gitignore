@@ -1,0 +1,17 @@
+# Python backend (KHÔNG push)
+venv/
+note/venv/
+note/Include/
+note/Lib/
+note/Scripts/
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+
+# Notes / docs
+*.md
+
+# system
+.DS_Store

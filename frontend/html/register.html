@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Nợ</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- TAB -->
+        <div class="tab">
+            <div class="tab-item active">Tôi nợ</div>
+            <div class="tab-item">Cho vay</div>
+        </div>
+
+        <!-- DANH SÁCH NGƯỜI -->
+        <div class="user-list">
+            <div class="user add">+</div>
+        </div>
+
+        <!-- FORM -->
+        <div class="form">
+            <input id="user" placeholder="👤 Người">
+            <input id="amount" type="tel" inputmode="numeric" placeholder="💰 Số tiền">
+            <input id="reason" placeholder="📝 Lý do">
+            <input id="date" type="date" placeholder="📅 Hôm nay">
+
+            <div class="tags">
+                <span>Ăn trưa</span>
+                <span>Cà phê</span>
+                <span>Mượn tiền</span>
+            </div>
+
+            <button class="save">💾 LƯU </button>
+        </div>
+
+    </div>
+    <!-- <div id="debt-list"></div> -->
+    <!-- BOTTOM NAV -->
+  <!-- ===== BOTTOM NAV ===== -->
+  <div class="bottom-nav">
+    <div class="nav-item active">➕<br>Nhập mới</div>
+    <div class="nav-item">📋<br>Danh sách</div>
+    <div class="nav-item">👤<br>Cá nhân</div>
+  </div>
+
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

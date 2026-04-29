@@ -1,0 +1,45 @@
+.A {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    margin: auto;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.B {
+    width: 30%;
+    height: 40%;
+    border: 2px solid red;
+    margin-top: 20px;
+    /* display: flex; */
+    /* align-items: center;
+     justify-content: center;  */
+}
+
+.textbox {
+    border: 2px solid rgb(1, 105, 54);
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.textbox::placeholder{
+    color: rgb(212, 21, 21);
+    text-align: center;
+}
+
+.button{
+   width: 100%; 
+}
+
+.C {
+    width: 30%;
+    height: 40%;
+    border: 2px solid rgb(1, 105, 54);
+    padding-top: 20px;
+}
