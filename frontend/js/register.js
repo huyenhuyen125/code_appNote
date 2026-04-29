@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // NAV
   document.querySelectorAll(".nav-item")[0].onclick = () => {
-    window.location.href = "register.html";
+    window.location.href = "html/register.html";
   };
 
   document.querySelectorAll(".nav-item")[1].onclick = () => {

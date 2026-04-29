@@ -56,16 +56,16 @@ function renderScreen1() {
 
 // NAV
 document.querySelectorAll(".nav-item")[0].onclick = () => {
-  window.location.href = "register.html";
+  window.location.href = "html/register.html";
 };
 
 document.querySelectorAll(".nav-item")[1].onclick = () => {
-  window.location.href = "home.html";
+  window.location.href = "html/home.html";
 };
 
 // button tạo người mới
 document.querySelector(".add-btn").onclick = () => {
-  window.location.href = "register.html";
+  window.location.href = "html/register.html";
 };
 
 // load
