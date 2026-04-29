@@ -114,7 +114,7 @@ function handleSubmit() {
   saveDebts(debts);
 
   // chuyển trang
-  window.location.href = "index.html";
+  window.location.href = "/index.html";
 }
 
 // ===== INIT =====
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document.querySelectorAll(".nav-item")[1].onclick = () => {
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   };
 
   // default date
