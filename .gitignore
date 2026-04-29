@@ -5,6 +5,7 @@ note/Include/
 note/Lib/
 note/Scripts/
 packages/
+requirements.txt
 *.pyc
 __pycache__/
 
