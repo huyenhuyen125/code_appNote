@@ -4,6 +4,7 @@ note/venv/
 note/Include/
 note/Lib/
 note/Scripts/
+packages/
 *.pyc
 __pycache__/
 
