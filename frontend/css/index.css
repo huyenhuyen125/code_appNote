@@ -18,17 +18,18 @@ body {
     padding: 10px;
     border-radius: 8px;
     color: #ffffff;
-     text-align: center;
+    text-align: center;
     font-size: 20px;
 
 }
 
-   
+
 
 .container {
     padding: 15px;
     max-width: 420px;
     margin: auto;
+    min-height: calc(100vh - 70px);
 }
 
 /* summary */
@@ -61,6 +62,21 @@ body {
     background: #ddd;
 }
 
+.list {
+    height: 550px;
+    overflow-y: overlay;
+
+}
+
+/* .list::-webkit-scrollbar{
+    width: 6px;
+} */
+
+.list:hover {
+    overflow-y: overlay;
+    height: 500px;
+}
+
 /* list */
 .card {
     display: flex;
@@ -69,6 +85,39 @@ body {
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
+    /* overflow-x: auto; */
+}
+
+.delete-btn {
+    /* top: 8px;
+    right: 10px;
+    /* cursor: pointer; */
+    /* font-size: 14px;
+      font-weight: bold;
+    color: red;
+
+
+    /* width: 22px; */
+    padding-left: 12px;
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #ff0000;
+
+    cursor: pointer;
+
+    transition: 0.2s;
 }
 
 .card img {
@@ -82,6 +131,10 @@ body {
     margin-left: 10px;
 }
 
+.info.detail {
+    text-align: right;
+}
+
 .name {
     font-weight: bold;
 }
@@ -92,7 +145,14 @@ body {
 }
 
 .money {
+    display: inline-block;
     font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 4px;
 }
 
 .nav-item {
@@ -108,6 +168,7 @@ body {
     box-sizing: border-box;
 
 }
+
 
 /* BOTTOM NAV */
 .bottom-nav {

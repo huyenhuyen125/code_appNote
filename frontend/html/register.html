@@ -6,48 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Nợ</title>
     <link rel="stylesheet" href="../css/register.css">
-     <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
     <div class="app">
         <!-- TAB -->
         <div class="tab">
-            <div class="tab-item active">Tôi nợ</div>
-            <div class="tab-item">Cho vay</div>
+            <div class="tab-item active" id="debt">Tôi nợ</div>
+            <div class="tab-item" id="loan">Cho vay</div>
         </div>
+        <div class="loan">
 
-        <!-- DANH SÁCH NGƯỜI -->
-        <div class="user-list">
-            <div class="user add">+</div>
-        </div>
+            <!-- DANH SÁCH NGƯỜI -->
+            <div class="user-list">
+                <div class="user add" id="addUser">+</div>
 
-        <!-- FORM -->
-        <div class="form">
-            <input id="user" placeholder="👤 Người">
-            <input id="amount" type="tel" inputmode="numeric" placeholder="💰 Số tiền">
-            <input id="reason" placeholder="📝 Lý do">
-            <input id="date" type="date" placeholder="📅 Hôm nay">
-
-            <div class="tags">
-                <span>Ăn trưa</span>
-                <span>Cà phê</span>
-                <span>Mượn tiền</span>
             </div>
 
-            <button class="save">💾 LƯU </button>
+            <!-- FORM -->
+            <div class="form">
+                <input id="user" placeholder="👤 Người">
+                <div id="emailError"></div>
+                <input id="amount" type="tel" inputmode="numeric" placeholder="💰 Số tiền">
+                <div id="passError"></div>
+                <input id="reason" placeholder="📝 Lý do">
+                <input id="date" type="date" placeholder="📅 Hôm nay">
+
+                <div class="tags">
+                    <button id="addTagbtn">➕ Add</button>
+                    <span class="item_tag">Ăn trưa
+                        <span class="remove_tag">×</span>
+                    </span>
+                    <span class="item_tag">Cà phê</span>
+                    <span class="item_tag">Mượn tiền</span>
+                </div>
+
+                <button class="save" id="saveBtn">💾 LƯU </button>
+            </div>
         </div>
 
     </div>
-    <!-- <div id="debt-list"></div> -->
-    <!-- BOTTOM NAV -->
-  <!-- ===== BOTTOM NAV ===== -->
-  <div class="bottom-nav">
-    <div class="nav-item active">➕<br>Nhập mới</div>
-    <div class="nav-item">📋<br>Danh sách</div>
-    <div class="nav-item">👤<br>Cá nhân</div>
-  </div>
+    <!-- ===== BOTTOM NAV ===== -->
+    <div class="bottom-nav">
+        <div class="nav-item active" id="userNewScr">➕<br>Nhập mới</div>
+        <div class="nav-item" id="userListScr">📋<br>Danh sách</div>
+        <div class="nav-item" id="userDetailScr">👤<br>Cá nhân</div>
+    </div>
 
+    <!-- <button id="openPopupBtn">
+        Thêm tag
+    </button> -->
+
+
+
+    <div class="popup-overlay" id="popup">
+
+        <div class="popup-box">
+
+            <h3>Add tag name</h3>
+
+            <input type="text" id="popupInput" placeholder="Input tag name">
+            <div id="tagNameError"></div>
+            <div class="popup-action">
+
+                <button id="savePopupBtn">
+                    Save
+                </button>
+
+                <button id="closePopupBtn">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
     <script src="../js/register.js"></script>
 </body>
 

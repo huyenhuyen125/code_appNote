@@ -9,14 +9,17 @@ body {
     max-width: 430px;
     margin: auto;
     padding: 16px;
-   min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
 
 }
 
-/* TITLE */
-/* .title {
-  text-align: center;
-} */
+#emailError,
+#passError,
+#tagNameError {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
 
 /* TAB */
 .tab {
@@ -33,6 +36,7 @@ body {
     padding: 10px;
     border-radius: 8px;
     color: #555;
+    
 }
 
 .tab-item.active {
@@ -45,18 +49,25 @@ body {
 .user-list {
     display: flex;
     gap: 10px;
-    overflow-x: auto;
+    overflow-x: overlay;
     margin-bottom: 10px;
+
 }
 
 .user {
     text-align: center;
+
+    p {
+        margin: 5px 0px;
+    }
+
 }
 
 .user img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+
 }
 
 .user.add {
@@ -68,6 +79,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    flex-shrink: 0;
 }
 
 /* FORM */
@@ -88,11 +100,36 @@ body {
     margin-top: 8px;
 }
 
-.tags span {
+.item_tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     background: #ddd;
-    padding: 6px 10px;
+    padding: 4px 8px;
     border-radius: 20px;
     font-size: 12px;
+}
+
+.tags button {
+    /* background:  #ffffff; */
+    background: #ddd;
+    color: rgb(0, 0, 0);
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+
+}
+
+
+.remove_tag {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
+    margin: 0 5px;
 }
 
 /* BUTTON */
@@ -134,4 +171,66 @@ body {
     background: white;
     padding: 10px 0;
     border-top: 1px solid #ddd;
+}
+
+
+.popup-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-box {
+
+    width: 300px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 22px;
+    /* margin-bottom: 300px; */
+
+    box-sizing: border-box;
+}
+
+.popup-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.popup-action {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#savePopupBtn,
+#closePopupBtn {
+    border-radius: 7px;
+    padding: 5px;
+     border: none;
+  
+}
+#savePopupBtn{
+    background-color: #66bb6a;
+}
+#closePopupBtn{
+    background-color: #949d94;
 }

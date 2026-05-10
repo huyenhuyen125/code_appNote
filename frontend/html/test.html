@@ -1,30 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
-
-    <link rel="stylesheet" href="css/test.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huyền Test</title>
+    <title>App Nợ</title>
+    <!-- <link rel="stylesheet" href="../css/test.css">
+    <link rel="manifest" href="../manifest.json"> -->
 </head>
 
 <body>
-    <div class="A">
-        <div class="B">
-            <p>
-                test B1
-            </p>
-            <p>
-                test B2
-            </p>
+    <div class="app">
+        <!-- TAB -->
+        <div class="tab">
+            <div class="tab-item one" id="debt">Tôi nợ</div>
+            <div class="tab-item two" id="loan">Cho vay</div>
         </div>
-        <div class="C">
-            <input class= "textbox" type = "text" placeholder="test nè" >
-            <button class="button">chào bạn</button>
-        </div>
-    </div>
-    <script src="js/login.js"></script>
+
+        <h1 id="count">0</h1>
+        <button id="increase">+</button>
+        <button id="decrease">-</button>
+
+        <input id="name" />
+        <input id="age" />
+
+
+        <form class="form_dangky">
+
+            <input id="nameUser" placeholder="input name" />
+            <div id="emailError"></div>
+            <input id="pass" placeholder="input pass" />
+            <div id="passError"></div>
+            <button id="register"> Register</button>
+        </form>
+
+
+        <table id=table_user>
+            <tr class="title">
+                <th>user</th>
+                <th>pass</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+
+            <tbody id="list_table">
+
+            </tbody>
+        </table>
+
+
+
+        <!-- <button id="add">Add</button>
+        <button id="delete">Delete</button>
+        <button id="update">Update</button> -->
+
+
+        <!-- <script src="js/login.js"></script> -->
 </body>
 
 </html>

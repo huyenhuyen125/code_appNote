@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App Nợ</title>
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="manifest" href="manifest.json">
 </head>
 
@@ -16,14 +16,14 @@
     </div>
 
     <div id="total-debt" class="summary red">
-      [TỔNG TÔI NỢ: 1.5M VND]
+      TỔNG TÔI NỢ:
     </div>
 
     <div id="total-loan" class="summary green">
-      [TỔNG CHO VAY: 2.8M VND]
+      TỔNG CHO VAY:
     </div>
 
-    <button class="add-btn">+ TẠO NGƯỜI MỚI</button>
+    <button class="add-btn" id="addBtn">+ TẠO NGƯỜI MỚI</button>
 
     <div id="debt-list" class="list">
       <div class="card">
@@ -32,7 +32,11 @@
           <div class="name">Tùng</div>
           <div class="desc">Ăn trưa</div>
         </div>
-        <div class="money red">-50k</div>
+        <div class="info detail">
+          <div class="date">30/05/2025</div>
+          <div class="money red">-50k</div>
+        </div>
+
       </div>
 
       <div class="card">
@@ -48,13 +52,13 @@
 
   <!-- ===== BOTTOM NAV ===== -->
   <div class="bottom-nav">
-    <div class="nav-item">➕<br>Nhập mới</div>
-    <div class="nav-item active">📋<br>Danh sách</div>
-    <div class="nav-item">👤<br>Cá nhân</div>
+    <div class="nav-item" id="userNewScr">➕<br>Nhập mới</div>
+    <div class="nav-item active" id="userListScr">📋<br>Danh sách</div>
+    <div class="nav-item" id="userDetailScr">👤<br>Cá nhân</div>
   </div>
 
 
-  <script src="js/home.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
