@@ -189,12 +189,13 @@ userNewScr.addEventListener("click", () => {
 })
 
 userListScr.addEventListener("click", () => {
-  window.location.href = "html/index.html";
+  // window.location.href = "html/index.html";
+    window.location.reload();
 })
 
-userDetailScr.addEventListener("click", () => {
-  window.location.href = "html/register.html";
-})
+// userDetailScr.addEventListener("click", () => {
+//   window.location.href = "html/register.html";
+// })
 
 
 

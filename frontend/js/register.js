@@ -330,7 +330,8 @@ userNewScr.addEventListener("click", () => {
   // window.location.href = "../html/register.html";
 
   // dẩy lên
-   window.location.href = "html/register.html";
+  //  window.location.href = "html/register.html";
+  window.location.reload();
 })
 
 userListScr.addEventListener("click", () => {
@@ -340,12 +341,10 @@ userListScr.addEventListener("click", () => {
   window.location.href = "/index.html";
 })
 
-userDetailScr.addEventListener("click", () => {
-  // window.location.href = "../html/register.html";
-  
-  // dẩy lên
-   window.location.href = "html/register.html";
-})
+// userDetailScr.addEventListener("click", () => {
+//   // window.location.href = "../html/register.html";
+//    window.location.href = "html/register.html";
+// })
 
 
 //  window.location.href = "html/register.html";
